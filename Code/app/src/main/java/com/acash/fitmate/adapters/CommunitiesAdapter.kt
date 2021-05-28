@@ -10,9 +10,9 @@ import com.acash.fitmate.models.Community
 
 class CommunitiesAdapter(private val listCommunities:ArrayList<Community>,private val fragmentRef: Fragment) : RecyclerView.Adapter<CommunitiesViewholder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommunitiesViewholder =
-        CommunitiesViewholder(
-            LayoutInflater.from(parent.context).inflate(R.layout.list_item_community, parent, false),
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommunitiesViewholder = CommunitiesViewholder(
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.list_item_community, parent, false),
             fragmentRef
         )
 
@@ -21,4 +21,5 @@ class CommunitiesAdapter(private val listCommunities:ArrayList<Community>,privat
     }
 
     override fun getItemCount(): Int = listCommunities.size
+
 }
