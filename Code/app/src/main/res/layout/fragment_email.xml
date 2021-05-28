@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.EmailFragment">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fitmate"
+            android:textColor="@color/white"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/tvTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/white"
+            android:text="@string/surround_yourself_with_determined_people_who_want_to_be_fit_like_you"/>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/emailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.acash.fitmate.fragments.SignInFragment"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/authBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/source_sans_pro_semi_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tvSpannable"
+        android:layout_marginBottom="13dp"
+        app:cornerRadius="10dp"
+        android:text="@string/sign_in"/>
+
+    <TextView
+        android:id="@+id/tvSpannable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:textColorHighlight="#00ff001C"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:text="@string/new_user_sign_up"/>
+
+</RelativeLayout>
