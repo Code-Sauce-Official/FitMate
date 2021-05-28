@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:checkable="true"
+        android:icon="@drawable/home_icon"
+        android:checked="true"/>
+
+    <item android:id="@+id/insights"
+        android:checkable="true"
+        android:icon="@drawable/insights_icon"
+        android:title="@string/insights"/>
+
+    <item android:id="@+id/myPartners"
+        android:checkable="true"
+        android:icon="@drawable/my_partners_icon"
+        android:title="@string/my_partners"/>
+
+    <item android:id="@+id/findPartners"
+        android:checkable="true"
+        android:icon="@drawable/find_partners_icon"
+        android:title="@string/find_partners"/>
+
+    <item android:id="@+id/communities"
+        android:checkable="true"
+        android:icon="@drawable/communities_icon"
+        android:title="@string/communities"/>
+
+    <item android:id="@+id/signout"
+        android:icon="@drawable/signout_icon"
+        android:title="@string/sign_out"/>
+
+</menu>

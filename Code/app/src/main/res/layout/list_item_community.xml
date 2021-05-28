@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="14dp"
-    android:layout_marginBottom="14dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
+    android:layout_margin="14dp"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -38,6 +35,7 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:textColor="@color/white"
+        android:fontFamily="@font/source_sans_pro_regular"
         android:textSize="12sp"
         tools:text="@string/workout"/>
 

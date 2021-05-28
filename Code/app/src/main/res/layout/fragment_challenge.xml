@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="21dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="21dp"
+    android:orientation="horizontal"
+    tools:context=".fragments.ChallengeFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/challengeImage"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+            <TextView
+                android:id="@+id/challengeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="14dp"
+                android:layout_toStartOf="@id/timeIcon"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="Monday challenge" />
+
+            <ImageView
+                android:id="@+id/timeIcon"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:padding="1dp"
+                android:layout_toStartOf="@id/timeLimit"
+                android:src="@drawable/time_icon" />
+
+            <TextView
+                android:id="@+id/timeLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="60" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complete_your_challenge"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            tools:text="Time Remaining 15:30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tasksBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#121212"
+                android:text="@string/tasks"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:cornerRadius="5dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/finishBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/finish"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:cornerRadius="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
