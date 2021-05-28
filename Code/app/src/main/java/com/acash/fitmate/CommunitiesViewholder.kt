@@ -14,15 +14,18 @@ class CommunitiesViewholder(itemView: View, private val fragmentRef: Fragment) :
         itemView.apply {
             image.setImageResource(community.id)
             tvCommunity.text = community.caption
-            cardCommunity.setOnClickListener {
-                if (cardCommunity.alpha == 0.2F) {
-                    cardCommunity.alpha = 1F
-                    (fragmentRef as CommunitiesFragment).selectedCommunities.add(tvCommunity.text.toString())
-                } else {
-                    cardCommunity.alpha = 0.2F
-                    (fragmentRef as CommunitiesFragment).selectedCommunities.remove(tvCommunity.text.toString())
+
+            if(fragmentRef is CommunitiesFragment) {
+                cardCommunity.setOnClickListener {
+                    if (cardCommunity.alpha == 0.2F) {
+                        cardCommunity.alpha = 1F
+                        (fragmentRef as CommunitiesFragment).selectedCommunities.add(tvCommunity.text.toString())
+                    } else {
+                        cardCommunity.alpha = 0.2F
+                        (fragmentRef as CommunitiesFragment).selectedCommunities.remove(tvCommunity.text.toString())
+                    }
                 }
-            }
+            }else cardCommunity.alpha = 1F
         }
     }
 }

@@ -129,7 +129,7 @@ class SignUpFragment : Fragment() {
         }
         return true
     }
-
+    
     private fun signUpUser(email: String, pwd: String) {
         val progressDialog = requireContext().createProgressDialog("Signing up, Please wait...",false)
         progressDialog.show()

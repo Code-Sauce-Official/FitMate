@@ -112,6 +112,7 @@ class SignInFragment : Fragment() {
                     if(auth.currentUser?.isEmailVerified == true) {
                         database.collection("users").document(auth.uid.toString()).get()
                             .addOnSuccessListener {
+                                progressDialog.dismiss()
                                 if (it.exists()) {
                                     startActivity(
                                         Intent(requireContext(), MainActivity::class.java)

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/optionsDrawer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/hamburger_icon_drawer"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        app:strokeColor="@color/mustard"
+        android:padding="3dp"
+        app:strokeWidth="1dp"
+        android:src="@drawable/defaultavatar"
+        app:shapeAppearanceOverlay="@style/CircularImageView"/>
+
+</RelativeLayout>

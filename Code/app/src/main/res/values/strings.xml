@@ -28,4 +28,18 @@
     <string name="join">Join</string>
     <string name="skip">Skip</string>
     <string name="workout">Workout</string>
+    <string name="home">Home</string>
+    <string name="insights">Insights</string>
+    <string name="my_partners">My Partners</string>
+    <string name="find_partners">Find Partners</string>
+    <string name="communities">Communities</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="take_a_challenge">Take a challenge</string>
+    <string name="time_remaining">Time Remaining %s</string>
+    <string name="complete_your_challenge">Complete your challenge</string>
+    <string name="tasks">Tasks</string>
+    <string name="finish">Finish</string>
+    <string name="badges_earned">Badges <font color="#EEB07C">earned</font></string>
+    <string name="challenges_completed">Challenges <font color="#EEB07C">completed</font></string>
+    <string name="take_challenge">Take Challenge</string>
 </resources>
