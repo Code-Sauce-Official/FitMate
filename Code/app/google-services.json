@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "85253321775",
+    "project_id": "fitmate-f33d2",
+    "storage_bucket": "fitmate-f33d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85253321775:android:7e01c268e8a666b4a842da",
+        "android_client_info": {
+          "package_name": "com.acash.fitmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85253321775-l49phiqrfd90psqqpgkkobpknc3k9h5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.acash.fitmate",
+            "certificate_hash": "d86565e429bcc1b91372f8f99831d3805bb11fb2"
+          }
+        },
+        {
+          "client_id": "85253321775-82rhq7lviju1q29511kbqj87fv4lb1tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQesBzsQvX8jwTQT3QGXAZwcIdblvOJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85253321775-82rhq7lviju1q29511kbqj87fv4lb1tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="6dp"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_view"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/upload_profile"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultavatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/uploadPicBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            app:backgroundTint="@color/dark_mustard"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@id/image_view"
+            app:layout_constraintEnd_toEndOf="@id/image_view"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/image_view"
+            app:layout_constraintTop_toTopOf="@id/image_view"
+            app:layout_constraintVertical_bias="1.0"
+            app:tint="@color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="35dp"
+        android:hint="@string/name"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorIconDrawable="@null"
+        app:errorTextColor="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/genderInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:hint="@string/gender"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorIconDrawable="@null"
+        app:errorTextColor="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/genderDropDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:lines="1"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dobInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:hint="@string/d_o_b"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorIconDrawable="@null"
+        app:errorTextColor="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dobEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:drawableEnd="@drawable/ic_baseline_date_range_24"
+            android:drawableTint="@color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:lines="1"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/stateInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:hint="@string/state"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorIconDrawable="@null"
+        app:errorTextColor="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/stateDropDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:lines="1"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/tncCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/accepttnc"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="0dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/find_your_fit"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@color/mustard"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

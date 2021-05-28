@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SignInFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInput"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:hint="@string/email"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorTextColor="@color/white"
+        app:errorIconDrawable="@null">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@null"
+            android:id="@+id/emailEt"
+            android:inputType="textEmailAddress"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pwdInput"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/white"
+        app:errorIconDrawable="@null"
+        app:passwordToggleEnabled="true"
+        app:hintTextColor="@color/white"
+        android:hint="@string/password"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorTextColor="@color/white"
+        app:passwordToggleTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@null"
+            android:id="@+id/pwdEt"
+            android:inputType="textPassword"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:padding="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvSendVerificationMail"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:text="@string/resend_verification_mail"
+        android:textColor="@color/white"
+        android:textColorHighlight="#00ff001C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvForgotPwd"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/mustard"
+        android:textColorHighlight="#00ff001C"
+        android:textSize="18sp" />
+</LinearLayout>

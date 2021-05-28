@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FitMate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fitmate">fitmate</string>
+    <string name="fitmate_colorful">fit<font color="#EEB07C">mate</font></string>
+    <string name="surround_yourself_with_determined_people_who_want_to_be_fit_like_you">Surround yourself with determined people who want to be fit like you</string>
+    <string name="find_your_fit">Find your Fit</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="resend_verification_mail">Resend Verification mail</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_user_sign_up">New user ? Sign up</string>
+    <string name="already_have_an_account_sign_in">Already have an account ? Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_email_id">Enter your Email Id</string>
+    <string name="enter_a_password">Enter a password</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="countdown">Resend Verification Mail in %ds</string>
+    <string name="upload_profile">Upload profile</string>
+    <string name="accepttnc">I accept Terms and Conditions</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="d_o_b">D.O.B</string>
+    <string name="state">State</string>
+    <string name="join_your_favourite_communities">Join your favourite communities</string>
+    <string name="join">Join</string>
+    <string name="skip">Skip</string>
+    <string name="workout">Workout</string>
+</resources>
