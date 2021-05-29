@@ -42,4 +42,22 @@
     <string name="badges_earned">Badges <font color="#EEB07C">earned</font></string>
     <string name="challenges_completed">Challenges <font color="#EEB07C">completed</font></string>
     <string name="take_challenge">Take Challenge</string>
+    <string name="your_posts">Your Posts</string>
+    <string name="find_new_partners">Find New Partners</string>
+    <string name="fill_the_form_correctly_to_find_a_suitable_fitness_partner">Fill the form correctly to find a suitable fitness partner</string>
+    <string name="category">Category</string>
+    <string name="motive">Motive</string>
+    <string name="your_preferences">Your Preferences</string>
+    <string name="gender_independent">Gender Independent</string>
+    <string name="same_gender">Same Gender</string>
+    <string name="read_terms_and_conditions">Read Terms and Conditions</string>
+    <string name="send_request">Send Request</string>
+    <string name="search">Search</string>
+    <string name="possible_matches">Possible Matches</string>
+    <string name="no_posts_found_click_on_button_to_create_posts_and_find_new_partners">No Posts Found ! Click on button to create posts and find new partners</string>
+    <string name="delete_post">Delete Post</string>
+    <string name="category_colorful">Category : <font color="#EEB07C">%s</font></string>
+    <string name="motive_colorful">Motive : <font color="#EEB07C">%s</font></string>
+    <string name="preference_colorful">Preference : <font color="#EEB07C">%s</font></string>
+    <string name="create_post">Create Post</string>
 </resources>
