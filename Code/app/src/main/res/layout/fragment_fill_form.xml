@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.FillFormFragment">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="65dp"
+            android:fontFamily="@font/source_sans_pro_semi_bold"
+            android:gravity="center"
+            android:text="@string/fill_the_form_correctly_to_find_a_suitable_fitness_partner"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/categoryInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="42dp"
+            android:hint="@string/category"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeErrorColor="@color/white"
+            app:errorIconDrawable="@null"
+            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/categoryDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:padding="13dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/motiveInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:hint="@string/motive"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeErrorColor="@color/white"
+            app:errorIconDrawable="@null"
+            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/motiveEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="3"
+                android:maxLines="3"
+                android:padding="13dp"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/source_sans_pro_semi_bold"
+            android:gravity="center"
+            android:text="@string/your_preferences"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/genderPrefRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/genderIndependentRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/gender_independent"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/sameGenderRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/same_gender"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createPostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:backgroundTint="@color/mustard"
+            android:fontFamily="@font/source_sans_pro_semi_bold"
+            android:textAllCaps="false"
+            android:text="@string/create_post"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/exercise_figures_bottom" />
+
+    </LinearLayout>
+
+</RelativeLayout>

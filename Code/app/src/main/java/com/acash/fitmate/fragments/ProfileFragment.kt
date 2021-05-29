@@ -300,6 +300,7 @@ class ProfileFragment : Fragment() {
             nameEt.text.toString(),
             genderDropDown.text.toString(),
             dobEt.text.toString(),
+            myCalendar.get(Calendar.YEAR),
             stateDropDown.text.toString(),
             downloadUrlDp
         )
