@@ -10,4 +10,3 @@
 ![image](https://user-images.githubusercontent.com/53532851/120089016-14f46600-c114-11eb-9d1b-416c6d45429f.png)
 ![image](https://user-images.githubusercontent.com/53532851/120089015-11f97580-c114-11eb-8299-940d1d75b458.png)
 ![image](https://user-images.githubusercontent.com/53532851/120089019-1887ed00-c114-11eb-845a-a4505a120485.png)
-![image](https://user-images.githubusercontent.com/53532851/120089021-1c1b7400-c114-11eb-8fbc-ac904f14530e.png)
