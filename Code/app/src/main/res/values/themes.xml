@@ -41,4 +41,21 @@
         <item name="android:background">@color/white</item>
         <item name="colorPrimary">@color/mustard</item>
     </style>
+
+    <style name="chatShapeAppearanceSent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">22dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+        <item name="cornerSizeTopLeft">22dp</item>
+        <item name="cornerSizeTopRight">22dp</item>
+    </style>
+
+    <style name="chatShapeAppearanceReceive">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+        <item name="cornerSizeBottomRight">22dp</item>
+        <item name="cornerSizeTopLeft">22dp</item>
+        <item name="cornerSizeTopRight">22dp</item>
+    </style>
+
 </resources>

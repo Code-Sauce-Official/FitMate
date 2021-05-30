@@ -7,7 +7,7 @@ import com.acash.fitmate.fragments.CommunitiesFragment
 import com.acash.fitmate.models.Community
 import kotlinx.android.synthetic.main.list_item_community.view.*
 
-class CommunitiesViewholder(itemView: View, private val fragmentRef: Fragment) :
+class CommunitiesViewHolder(itemView: View, private val fragmentRef: Fragment) :
     RecyclerView.ViewHolder(itemView) {
 
     fun bind(community: Community) {

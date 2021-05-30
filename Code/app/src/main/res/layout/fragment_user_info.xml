@@ -26,8 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:scaleType="centerCrop"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                tools:src="@drawable/sports_challenge" />
+                android:src="@drawable/defaultavatar"
+                app:shapeAppearanceOverlay="@style/RoundedImageView"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,6 +97,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/sendRequestBtn"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_marginStart="12dp"

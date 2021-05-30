@@ -60,4 +60,16 @@
     <string name="motive_colorful">Motive : <font color="#EEB07C">%s</font></string>
     <string name="preference_colorful">Preference : <font color="#EEB07C">%s</font></string>
     <string name="create_post">Create Post</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
 </resources>

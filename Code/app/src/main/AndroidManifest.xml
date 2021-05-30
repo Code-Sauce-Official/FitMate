@@ -12,19 +12,18 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitMate">
-
-        <activity android:name=".activities.SplashActivity"
+        <activity android:name=".activities.ChatActivity"></activity>
+        <activity
+            android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activities.AuthActivity"/>
-
-        <activity android:name=".activities.ProfileActivity"/>
-
+        <activity android:name=".activities.AuthActivity" />
+        <activity android:name=".activities.ProfileActivity" />
         <activity android:name=".activities.MainActivity" />
     </application>
 

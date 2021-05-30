@@ -11,7 +11,7 @@ import com.google.gson.Gson
 import kotlinx.android.synthetic.main.list_item_match.view.*
 import java.util.*
 
-class MatchViewholder(itemView: View, private val activityRef: Activity):RecyclerView.ViewHolder(itemView) {
+class MatchViewHolder(itemView: View, private val activityRef: Activity):RecyclerView.ViewHolder(itemView) {
     fun bind(form: Form){
         itemView.apply {
             tvName.text = form.name
