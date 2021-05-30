@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.paging.PagedList
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.acash.fitmate.MatchViewholder
+import com.acash.fitmate.MatchViewHolder
 import com.acash.fitmate.R
 import com.acash.fitmate.activities.EmptyViewHolder
 import com.acash.fitmate.activities.MainActivity
@@ -125,7 +125,7 @@ class PostInfoFragment : Fragment() {
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder{
                 return if (viewType == NORMAL_VIEW_TYPE)
-                    MatchViewholder(
+                    MatchViewHolder(
                         LayoutInflater.from(parent.context).inflate(
                             R.layout.list_item_match, parent, false
                         ),
@@ -141,7 +141,7 @@ class PostInfoFragment : Fragment() {
                 position: Int,
                 model: Form
             ) {
-                if(holder is MatchViewholder) {
+                if(holder is MatchViewHolder) {
                     holder.bind(model)
                 }
             }

@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentManager
 import com.acash.fitmate.R
 import com.acash.fitmate.fragments.YourPostsFragment
 import com.acash.fitmate.fragments.HomeFragment
+import com.acash.fitmate.fragments.MyPartnersFragment
 import com.acash.fitmate.models.User
 import com.bumptech.glide.Glide
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -93,7 +94,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.myPartners -> {
-                fragmentToSet = HomeFragment()
+                fragmentToSet = MyPartnersFragment()
                 nextFragment = 2
             }
 
