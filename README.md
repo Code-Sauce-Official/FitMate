@@ -7,7 +7,7 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 [![Youtube](https://img.shields.io/badge/Youtube-FF4747?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCCPwX0xdVigPTksRMnpxr6g)&nbsp;
 
 ## Features
-- `Authentication` : This is implemented using Firebase Auth. The user needs to sign up when they use the app for the first time. If anytime the user chooses to log out they will need to sign in using the same email id and password. The forgot password feature is also implemented.
+- `Authentication` : This is implemented using Firebase Auth. A first-time user needs to sign up upon opening the app. On doing the same, the user will receive a verification mail. The link in the mail will verify the user after which they can sign in. If the mail is not sent due to any error, there's an option for the user to request for it again at an interval of 30 seconds. The user upon forgetting the password can use an option to reset their password, through which they will receive a mail, which will direct them to change the same.  
 
 - `Find Partners` : This is the main feature of the application. This feature allows the user to look for workout buddies based on the preferences(community, gender etc.), the user can view their profiles and also make requests which can be accepted or declined. The chat feature allows the partners to communicate with each other.
 
