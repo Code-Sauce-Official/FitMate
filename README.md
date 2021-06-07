@@ -4,12 +4,19 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 `Join Code Sauce discord server for project updates, weekly meetups and insights.`
 
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/JbGXPwVV)
-[![Youtube](https://img.shields.io/badge/Youtube-FF4747?style=for-the-badge&logo=youtube&logoColor=white)](https://discord.gg/JbGXPwVV)&nbsp;
+[![Youtube](https://img.shields.io/badge/Youtube-FF4747?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCCPwX0xdVigPTksRMnpxr6g)&nbsp;
 
 ## Features
--
--
--
+- `Authentication` : This is implemented using Firebase Auth. The user needs to sign up when they use the app for the first time. If anytime the user chooses to log out they will need to sign in using the same email id and password. The forgot password feature is also implemented.
+
+- `Find Partners` : This is the main feature of the application. This feature allows the user to look for workout buddies based on the preferences(community, gender etc.), the user can view their profiles and also make requests which can be accepted or declined. The chat feature allows the partners to communicate with each other.
+
+- `Taking up Challenges` : The user can choose from a variety of timed challenges, updated daily to suit your needs. The challenges can be chosen according to the level of user's expertise and he/she can earn badges on completing them.
+
+- `Join Communities` : The user can explore different communities as per the interests. Sports, athletics, yoga and many more! The user can interact with people and gain tips to keep yourself in shape. The group chat feature allows the people who have joined the same community to interact and plan out activities together in one place.
+
+- `Insights` : The user can explore a world of daily insights where he/she can gain knowledge about daily diet and workout needs, and also ways to keep oneself calm throughout the day!
+
 
 ## Maintainers✨
 <table>
@@ -25,6 +32,22 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 </tr>
 </table>
 
+## Setting up the project
+
+To setup the project locally read these wiki pages and follow the instructions:
+
+ - Fork, Clone and Remote
+ - Open project in Android Studio
+
+## Branches
+
+The repository has the following permanent branches:
+
+ * **master** This contains the code which has been released.
+
+ * **develop** This contains the latest code. All the contributing PRs must be sent to this branch. When we want to release the next version of the app, this branch is merged into the `master` branch.
+
 ## Contributing
 Please read our [Contributing guidelines](), [Code of Conduct]() and [Reporting Guidelines]()
-## Setting up the project
+
+
