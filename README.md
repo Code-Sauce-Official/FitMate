@@ -6,6 +6,9 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/JbGXPwVV)&nbsp;
 
 ## Features
+-
+-
+-
 
 ## Maintainers✨
 <table>
@@ -16,7 +19,7 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 
  <td align="center"><a href="https://github.com/nidhisingh-1"><img src="https://avatars.githubusercontent.com/nidhisingh-1?s=100" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Nidhi Singh</b></sub></a><br /><p>Android/Web Developer</p></td>
 
-<td align="center"><a href="https://github.com/yatharthmago-stack"><img src="https://avatars.githubusercontent.com/yatharthmago-stack?s=100" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Yatharth Mago</b></sub></a><br /><p>Android/Web Developer</p></td>
+<td align="center"><a href="https://github.com/yatharthmago-stack"><img src="https://user-images.githubusercontent.com/53532851/120995152-c2b1e580-c7a2-11eb-8c34-910f87bc2cf1.png" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Yatharth Mago</b></sub></a><br /><p>Android/Web Developer</p></td>
 
 </tr>
 </table>
