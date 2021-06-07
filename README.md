@@ -3,7 +3,8 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 
 `Join Code Sauce discord server for project updates, weekly meetups and insights.`
 
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/JbGXPwVV)&nbsp;
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/JbGXPwVV)
+[![Youtube](https://img.shields.io/badge/Youtube-FF4747?style=for-the-badge&logo=youtube&logoColor=white)](https://discord.gg/JbGXPwVV)&nbsp;
 
 ## Features
 -
