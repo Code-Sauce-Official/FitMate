@@ -15,7 +15,7 @@ Do you feel lazy and uninterested when there’s no one for you to work out with
 <tr>
 <td align="center"><a href="https://github.com/SHITIZ-AGGARWAL"><img src="https://user-images.githubusercontent.com/53532851/120942660-14795200-c748-11eb-8e5d-1f0924f1ed67.jpg?s=100" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Shitiz Aggarwal</b></sub></a><br /><p>Product Designer/Web</p></td>
 
-<td align="center"><a href="https://github.com/Acash512"><img src="https://avatars.githubusercontent.com/Acash512?s=100" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Aakash Gupta</b></sub></a><br /><p>Lead Android Developer</p></td>
+<td align="center"><a href="https://github.com/Acash512"><img src="https://user-images.githubusercontent.com/53511962/120997371-c2b2e500-c7a4-11eb-9269-8ea93264414a.jpg" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Aakash Gupta</b></sub></a><br /><p>Lead Android Developer</p></td>
 
  <td align="center"><a href="https://github.com/nidhisingh-1"><img src="https://avatars.githubusercontent.com/nidhisingh-1?s=100" width="120px;" alt=""  style="border-radius: 50px" /><br /><sub><b>Nidhi Singh</b></sub></a><br /><p>Android/Web Developer</p></td>
 
