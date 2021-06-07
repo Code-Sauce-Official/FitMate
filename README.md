@@ -48,6 +48,5 @@ The repository has the following permanent branches:
  * **develop** This contains the latest code. All the contributing PRs must be sent to this branch. When we want to release the next version of the app, this branch is merged into the `master` branch.
 
 ## Contributing
-Please read our [Contributing guidelines](), [Code of Conduct]() and [Reporting Guidelines]()
-
+Please read our [Contributing guidelines]() and [Code of Conduct]()
 
