@@ -8,8 +8,7 @@ class User(
     val yearOfBirth:Int,
     val state:String,
     val downloadUrlDp:String,
-    val communities:ArrayList<String> = ArrayList(),
-    val partners:ArrayList<String> = ArrayList()
+    val communities:ArrayList<String> = ArrayList()
 ){
-    constructor() : this("","","","",0,"","",ArrayList<String>(),ArrayList<String>())
+    constructor() : this("","","","",0,"","",ArrayList<String>())
 }
