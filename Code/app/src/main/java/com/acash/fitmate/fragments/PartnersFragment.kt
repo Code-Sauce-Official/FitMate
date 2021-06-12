@@ -62,17 +62,16 @@ class PartnersFragment : Fragment() {
                     startActivity(intent)
                 }
             }
-
-            override fun getItem(position: Int): Inbox {
-                return super.getItem(itemCount - 1 - position)
-            }
         }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val mLayoutManager = LinearLayoutManager(requireContext())
+        mLayoutManager.reverseLayout = true
+        mLayoutManager.stackFromEnd = true
         chatRview.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = mLayoutManager
             adapter = inboxAdapter
         }
     }
