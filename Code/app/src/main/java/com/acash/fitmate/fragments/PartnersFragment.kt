@@ -2,10 +2,10 @@ package com.acash.fitmate.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.acash.fitmate.InboxViewHolder
 import com.acash.fitmate.R
@@ -32,8 +32,8 @@ class PartnersFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         setupAdapter()
         // Inflate the layout for this fragment
@@ -41,19 +41,19 @@ class PartnersFragment : Fragment() {
     }
 
     private fun setupAdapter() {
-        val baseQuery = database.reference.child("inbox/${auth.uid}")
+        val baseQuery = database.reference.child("inbox/${auth.uid}").orderByChild("time/time")
 
         val options = FirebaseRecyclerOptions.Builder<Inbox>()
-            .setLifecycleOwner(viewLifecycleOwner)
-            .setQuery(baseQuery,Inbox::class.java)
-            .build()
+                .setLifecycleOwner(viewLifecycleOwner)
+                .setQuery(baseQuery, Inbox::class.java)
+                .build()
 
         inboxAdapter = object : FirebaseRecyclerAdapter<Inbox, InboxViewHolder>(options) {
 
-            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):InboxViewHolder =
-                InboxViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item_partner, parent, false))
+            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): InboxViewHolder =
+                    InboxViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item_partner, parent, false))
 
-            override fun onBindViewHolder(holder:InboxViewHolder, position: Int, inbox: Inbox) {
+            override fun onBindViewHolder(holder: InboxViewHolder, position: Int, inbox: Inbox) {
                 holder.bind(inbox) { name, uid, thumbImg ->
                     val intent = Intent(requireContext(), ChatActivity::class.java)
                     intent.putExtra(NAME, name)
@@ -67,8 +67,11 @@ class PartnersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val mLayoutManager = LinearLayoutManager(requireContext())
+        mLayoutManager.reverseLayout = true
+        mLayoutManager.stackFromEnd = true
         chatRview.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = mLayoutManager
             adapter = inboxAdapter
         }
     }
