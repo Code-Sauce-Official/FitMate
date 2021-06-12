@@ -11,7 +11,6 @@ import com.acash.fitmate.models.Inbox
 import com.acash.fitmate.models.Request
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.list_item_request.view.*
 import java.util.*
 
@@ -65,8 +64,7 @@ class RequestViewHolder(itemView: View, private val activityRef: Activity) :
                                     .removeValue()
                                     .addOnSuccessListener {
                                         progressDialog.dismiss()
-                                        Toast.makeText(activityRef,"Added partner suucessfully", Toast.LENGTH_SHORT).show()
-                                        (activityRef as MainActivity).onBackPressed()
+                                        Toast.makeText(activityRef,"Added partner successfully", Toast.LENGTH_SHORT).show()
                                     }
                                     .addOnFailureListener {
                                         progressDialog.dismiss()
