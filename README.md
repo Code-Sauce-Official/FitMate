@@ -1,4 +1,4 @@
-﻿![FitMate](https://user-images.githubusercontent.com/71898427/121775809-5cb0ce00-cba7-11eb-8bcb-1cea314a0b37.jpg)
+![FitMate](https://user-images.githubusercontent.com/71898427/121775809-5cb0ce00-cba7-11eb-8bcb-1cea314a0b37.jpg)
 
 # FitMate 
 
@@ -17,7 +17,7 @@ Do you feel lazy and uninterested when there’s no one with you to workout? Do 
 
 
 
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)]() [![Adobe XD](https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=Adobe%20XD&logoColor=white)]() [![Adobe XD](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)]() [![Adobe XD](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)]() [![Adobe XD](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)]() 
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/) [![Adobe XD](https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=Adobe%20XD&logoColor=white)](https://www.adobe.com/products/xd.html?sdid=12B9F15S&mv=Search&ef_id=CjwKCAjwwqaGBhBKEiwAMk-FtLdh_6WSOFgrFUSXMn7OV-3yYdf47-XcDa2PbqiybAFRYmLx7eRYsRoCkDcQAvD_BwE:G:s&s_kwcid=AL!3085!3!526748867264!b!!g!!experience%20design%20adobe!1641846445!65452677271) [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/) [![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/) [![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/) 
 
 ## Features✨
 - `Authentication` : This is implemented using Firebase Auth. A first-time user needs to sign up upon opening the app. On doing the same, the user will receive a verification mail. The link in the mail will verify the user after which they can sign in. If the mail is not sent due to any error, there's an option for the user to request for it again at an interval of 30 seconds. The user upon forgetting the password can use an option to reset their password, through which they will receive a mail, which will direct them to change the same.  
@@ -91,6 +91,11 @@ Thanks to these wonderful people ✨✨:
 		</td>
 	</tr>
 </table>
+
+## Open Source Programs
+<img src = "https://user-images.githubusercontent.com/53532851/122287473-9cace380-cf0e-11eb-8cd4-b548b061ef39.png" width="200px">
+
+
 
 
 
