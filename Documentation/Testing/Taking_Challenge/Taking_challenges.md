@@ -1,4 +1,4 @@
-*_Test1 Description_  
+* _ Test1 Description_  
 Taking up various challenges available on the dashboard
 
      _Screenshot/gif_:  <img src="" alt="Test1 Screenshot" />
