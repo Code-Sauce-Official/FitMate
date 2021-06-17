@@ -49,3 +49,45 @@
      <img src="TestSignUpAndSignIn_Snapshots/Forgot_Password_FitMate.jpg" width="300"/><br>
      _Expected Result_: Instructions for resetting password has been sent to your email address<br>
      _Actual Result_:  Positive
+
+ * _Test9 Failed Login Attempts_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Failed_Login_Attempts_FitMate.jpg" width="300"/><br>
+     _Expected Result_: I tried sign in with incorrect credentials for 3 times only but it says we have blocked all requests from this device due to many failed login attempts .<br>
+     _Actual Result_:  Negative (In case someone not intentionally try to sign in with wrong credentials then in that case this is an issue)
+
+* _Test10 Badly Formatted Email_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Email_Badly_Formatted_FitMate.jpg" width="300"/><br>
+     _Expected Result_: Email should have been accepted<br>
+     _Actual Result_:  Negative (Someone can have this type of email id ) 
+
+* _Test11 Badly Formatted Email2_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Number_As_Email_FitMate.jpg" width="300"/><br>
+     _Expected Result_: When I try to use phone number in case of email it says badly formatted email , number should also be a way to sign in <br>
+     _Actual Result_:  Negative     
+
+* _Test12 Passwards Do Not Match_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Password_Dont_Match_FitMate.jpg" width="300"/><br>
+     _Expected Result_: When I tried sign Up with different entries in 'password' and 'Confirm Password' it says passwords does not match<br>
+     _Actual Result_:  Positive     
+
+* _Test13 Email Already in Use_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Email_AlreadyIN_Use_FitMate.jpg" width="300"/><br>
+     _Expected Result_: When I tried sign Up with already registered email it says email already in use<br>
+     _Actual Result_:  Positive   
+
+* _Test14 Password must contain Atleast 1 Letter_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Password_Atleast_oneLetter_FitMate.jpg" width="300"/><br>
+     _Expected Result_: Password must contain atleast one letter<br>
+     _Actual Result_:  Positive     
+
+* _Test15 Password must contain Atleast 1 Digit_  
+     _Screenshot/gif_:  
+     <img src="TestSignUpAndSignIn_Snapshots/Password_Atleast_1Digit_FitMate.jpg" width="300"/><br>
+     _Expected Result_: Password must contain atleast one digit<br>
+     _Actual Result_:  Positive     
