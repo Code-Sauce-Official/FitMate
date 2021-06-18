@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onStart() {
         super.onStart()
-        userStatusCollection.setValue(auth.uid)
+        userStatusCollection.setValue(true)
         userStatusCollection.onDisconnect().removeValue()
     }
 

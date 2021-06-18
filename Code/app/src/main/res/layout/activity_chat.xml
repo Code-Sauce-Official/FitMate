@@ -20,32 +20,55 @@
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/userImgView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:adjustViewBounds="true"
-            android:clickable="true"
-            android:focusable="true"
-            android:scaleType="centerCrop"
-            app:strokeWidth="1dp"
-            android:padding="3dp"
-            app:strokeColor="@color/white"
-            android:src="@drawable/defaultavatar"
-            app:shapeAppearanceOverlay="@style/CircularImageView" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/nameTv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:ellipsize="end"
-            android:lines="1"
-            android:fontFamily="@font/montserrat"
-            android:textColor="@color/mustard"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Aakash Gupta" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userImgView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_margin="3dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/defaultavatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircularImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:lines="1"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/mustard"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/onlineTv"
+                app:layout_constraintStart_toEndOf="@+id/userImgView"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Aakash Gupta" />
+
+            <TextView
+                android:id="@+id/onlineTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userImgView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </com.google.android.material.appbar.MaterialToolbar>
 
     <androidx.recyclerview.widget.RecyclerView

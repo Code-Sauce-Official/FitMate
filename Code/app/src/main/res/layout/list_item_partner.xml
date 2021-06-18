@@ -29,18 +29,6 @@
             android:src="@drawable/defaultavatar"
             app:shapeAppearanceOverlay="@style/CircularImageView" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/userStatus"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:background="#4CFF00"
-            android:visibility="gone"
-            tools:visibility="visible"
-            app:shapeAppearanceOverlay="@style/CircularImageView"
-            app:layout_constraintEnd_toEndOf="@id/userImgView"
-            app:layout_constraintBottom_toBottomOf="@id/userImgView"
-            android:layout_margin="5dp"/>
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
