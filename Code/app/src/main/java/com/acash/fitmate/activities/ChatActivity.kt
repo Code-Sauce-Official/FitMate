@@ -1,10 +1,10 @@
 package com.acash.fitmate.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.acash.fitmate.R
 import com.acash.fitmate.adapters.ChatAdapter
@@ -18,6 +18,7 @@ import com.vanniktech.emoji.EmojiManager
 import com.vanniktech.emoji.EmojiPopup
 import com.vanniktech.emoji.google.GoogleEmojiProvider
 import kotlinx.android.synthetic.main.activity_chat.*
+import kotlinx.android.synthetic.main.list_item_partner.view.*
 
 const val NAME = "name"
 const val UID = "uid"
@@ -96,6 +97,22 @@ class ChatActivity : AppCompatActivity() {
         }
 
         updateReadCount()
+
+        db.reference.child("user_status/${friendId}").addValueEventListener(object : ValueEventListener {
+        override fun onDataChange(snapshot: DataSnapshot) {
+            val online = snapshot.value
+            if (online == true) {
+                onlineTv.visibility = View.VISIBLE
+            }
+            else {
+                onlineTv.visibility = View.GONE
+            }
+        }
+        override fun onCancelled(error: DatabaseError) {
+            Toast.makeText(this@ChatActivity, "Error Occur", Toast.LENGTH_SHORT).show()
+        }
+    })
+
     }
 
     private fun listenMessages() {
