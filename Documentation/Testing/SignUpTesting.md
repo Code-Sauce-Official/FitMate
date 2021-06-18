@@ -1,8 +1,8 @@
-* _Test1 New User Verification_  
-     _Screenshot/gif_:  
-     <img src="TestSignUpAndSignIn_Snapshots/New_user_verification.jpg" width="300"/><br>
-     _Expected Result_:  It denied my login as I was a new User<br>
-     _Actual Result_: Positive<br>
+### Test1 : New User Verification  
+**_Screenshot/gif_**<br>
+<img src="TestSignUpAndSignIn_Snapshots/New_user_verification.jpg" width="300"/><br>
+**_Expected Result_**:  It denied my login as I was a new User<br>
+**_Actual Result_**: Positive<br>
 
 * _Test2 Verifying already registered user_  
      _Screenshot/gif_:  
@@ -25,7 +25,7 @@
      
 * _Test5 Empty Fields_  
      _Screenshot/gif_:  
-     <img src="TestSignUpAndSignIn_Snapshots/Empty_Fields_Fitmate.jpg" width="300"/><br>
+     <img src="TestSignUpAndSignIn_Snapshots/Empty_Fields_FitMate.jpg" width="300"/><br>
      _Expected Result_: Email and Password cannot be empty<br>
      _Actual Result_:  Positive
      
