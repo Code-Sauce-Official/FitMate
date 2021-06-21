@@ -19,18 +19,18 @@
 **_Expected Result_**: Normal messaging feature to be enabled. <br>
 **_Actual Result_**: The recent message is showed as blank. <br>
 
-### Test4 : Description
+### Test4 : New Message
 **_Screenshot/gif_**<br>
 <img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/66.jpeg" width="300"/><br>
-**_Expected Result_**: <br>
-**_Actual Result_**: <br>
+**_Expected Result_**: A Pop-up/Number showing new messages in My Partner sub-nav of navbar. <br>
+**_Actual Result_**: User might not know at first glance whether there are new messages or not. <br>
 
 
-### Test5 : Description
+### Test5 : New Request
 **_Screenshot/gif_**<br>
 <img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/77.jpeg" width="300"/><br>
-**_Expected Result_**: <br>
-**_Actual Result_**: <br>
+**_Expected Result_**: A Pop-up/Number showing new requests arrived in My Partner sub-nav of navbar. <br>
+**_Actual Result_**: User might not know at first glance whether there are new requests or not. <br>
 
 
 ### Test6 : Messaging Options
