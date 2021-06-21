@@ -77,6 +77,8 @@ The repository has the following permanent branches:
 ## Contributing
 Please read our [Contributing guidelines](https://github.com/Code-Sauce-Official/FitMate/blob/develop/Documentation/CONTRIBUTING.md#contributing-guidelines) and [Code of Conduct](https://github.com/Code-Sauce-Official/FitMate/blob/develop/Documentation/CodeOfConduct.md#code-of-conduct)
 
+If you are new to open source check out [How to Start](https://github.com/Code-Sauce-Official/FitMate/blob/develop/Documentation/HowToStart.md)
+
 
 
 
