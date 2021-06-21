@@ -49,5 +49,5 @@
 ### Test8 : Description
 **_Screenshot/gif_**<br>
 <img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/88.jpeg" width="300"/><br>
-**_Expected Result_**: <br>
-**_Actual Result_**: <br>
+**_Expected Result_**: Option to share image or documents along with text messages. <br>
+**_Actual Result_**: Only text messages are sent. <br>
