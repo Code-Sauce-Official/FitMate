@@ -4,17 +4,18 @@
 **_Expected Result_**: Customised/changeable heading for post by user. <br>
 **_Actual Result_**: Montonous heading in incresing order. <br>
 
-### Test2 : 
-**_Screenshot/gif_**<br>
-<img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/22.jpeg" width="300"/><br>
-<img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/33.jpeg" width="300"/><br>
-**_Expected Result_**: <br>
-**_Actual Result_**: <br>
 
-### Test3 : Description
+### Test2 : Description
 **_Screenshot/gif_**<br>
 <img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/44.jpeg" width="300"/><br>
 <img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/55.jpeg" width="300"/><br>
+**_Expected Result_**: <br>
+**_Actual Result_**: <br>
+
+### Test3 : 
+**_Screenshot/gif_**<br>
+<img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/22.jpeg" width="300"/><br>
+<img src="https://github.com/PadminiRai/FitMate/blob/develop/Documentation/Testing/Screenshots/33.jpeg" width="300"/><br>
 **_Expected Result_**: <br>
 **_Actual Result_**: <br>
 
