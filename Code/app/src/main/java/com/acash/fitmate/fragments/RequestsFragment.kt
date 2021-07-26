@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.acash.fitmate.R
-import com.acash.fitmate.RequestViewHolder
-import com.acash.fitmate.models.Form
+import com.acash.fitmate.viewholders.RequestViewHolder
 import com.acash.fitmate.models.Request
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -53,7 +52,7 @@ class RequestsFragment : Fragment() {
             .setQuery(baseQuery, Request::class.java)
             .build()
 
-        requestsAdapter = object : FirebaseRecyclerAdapter<Request,RequestViewHolder>(options) {
+        requestsAdapter = object : FirebaseRecyclerAdapter<Request, RequestViewHolder>(options) {
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RequestViewHolder =
                 RequestViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.list_item_request, parent, false)

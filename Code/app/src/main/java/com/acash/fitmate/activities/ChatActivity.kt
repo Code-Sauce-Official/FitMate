@@ -25,23 +25,23 @@ const val UID = "uid"
 const val THUMBIMG = "thumbImg"
 
 class ChatActivity : AppCompatActivity() {
-    private val friendId by lazy{
+    private val friendId by lazy {
         intent.getStringExtra(UID)!!
     }
 
-    private val friendName by lazy{
+    private val friendName by lazy {
         intent.getStringExtra(NAME)!!
     }
 
-    private val friendImg by lazy{
+    private val friendImg by lazy {
         intent.getStringExtra(THUMBIMG)!!
     }
 
-    private val currentUid by lazy{
+    private val currentUid by lazy {
         FirebaseAuth.getInstance().uid!!
     }
 
-    private val db by lazy{
+    private val db by lazy {
         FirebaseDatabase.getInstance("https://fitmate-f33d2-default-rtdb.asia-southeast1.firebasedatabase.app/")
     }
 
@@ -60,36 +60,37 @@ class ChatActivity : AppCompatActivity() {
 
         nameTv.text = friendName
 
-        if(friendImg!="")
+        if (friendImg != "")
             Glide.with(this).load(friendImg).placeholder(R.drawable.defaultavatar).error(
-                R.drawable.defaultavatar).into(userImgView)
+                R.drawable.defaultavatar
+            ).into(userImgView)
 
-        chatAdapter = ChatAdapter(listChatEvents,currentUid)
+        chatAdapter = ChatAdapter(listChatEvents, currentUid)
 
-        msgRv.apply{
+        msgRv.apply {
             layoutManager = LinearLayoutManager(this@ChatActivity)
             adapter = chatAdapter
         }
 
         val emojiPopup = EmojiPopup.Builder.fromRootView(rootView).build(msgEdtv)
-        smileBtn.setOnClickListener{
+        smileBtn.setOnClickListener {
             emojiPopup.toggle()
         }
 
         listenMessages()
 
         FirebaseFirestore.getInstance().collection("users").document(currentUid).get()
-            .addOnSuccessListener{
+            .addOnSuccessListener {
                 currentUser = it.toObject(User::class.java)!!
             }
             .addOnFailureListener {
-                Toast.makeText(this,it.message, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
                 finish()
             }
 
-        sendBtn.setOnClickListener{
+        sendBtn.setOnClickListener {
             msgEdtv.text?.let {
-                if(it.isNotEmpty() && ::currentUser.isInitialized) {
+                if (it.isNotEmpty() && ::currentUser.isInitialized) {
                     sendMessage(it.toString())
                     it.clear()
                 }
@@ -98,20 +99,21 @@ class ChatActivity : AppCompatActivity() {
 
         updateReadCount()
 
-        db.reference.child("user_status/${friendId}").addValueEventListener(object : ValueEventListener {
-        override fun onDataChange(snapshot: DataSnapshot) {
-            val online = snapshot.value
-            if (online == true) {
-                onlineTv.visibility = View.VISIBLE
-            }
-            else {
-                onlineTv.visibility = View.GONE
-            }
-        }
-        override fun onCancelled(error: DatabaseError) {
-            Toast.makeText(this@ChatActivity, "Error Occur", Toast.LENGTH_SHORT).show()
-        }
-    })
+        db.reference.child("user_status/${friendId}")
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val online = snapshot.value
+                    if (online == true) {
+                        onlineTv.visibility = View.VISIBLE
+                    } else {
+                        onlineTv.visibility = View.GONE
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(this@ChatActivity, "Error Occur", Toast.LENGTH_SHORT).show()
+                }
+            })
 
     }
 
@@ -145,44 +147,44 @@ class ChatActivity : AppCompatActivity() {
 
     private fun addMessage(msgMap: Messages) {
         val eventBefore = listChatEvents.lastOrNull()
-        if((eventBefore!=null) && !eventBefore.sentAt.isSameDayAs(msgMap.sentAt) || (eventBefore==null)){
+        if ((eventBefore != null) && !eventBefore.sentAt.isSameDayAs(msgMap.sentAt) || (eventBefore == null)) {
             listChatEvents.add(
-                DateHeader(this,msgMap.sentAt)
+                DateHeader(this, msgMap.sentAt)
             )
         }
 
         listChatEvents.add(msgMap)
         chatAdapter.notifyDataSetChanged()
-        msgRv.scrollToPosition(listChatEvents.size-1)
+        msgRv.scrollToPosition(listChatEvents.size - 1)
     }
 
-    private fun sendMessage(msg:String) {
+    private fun sendMessage(msg: String) {
         val id = getMessages(friendId).push().key
-        checkNotNull(id){"Cannot be null"}
-        val msgMap = Messages(msg,currentUid,id)
+        checkNotNull(id) { "Cannot be null" }
+        val msgMap = Messages(msg, currentUid, id)
         getMessages(friendId).child(id).setValue(msgMap)
         updateLastMsg(msgMap)
     }
 
     private fun updateLastMsg(msgMap: Messages) {
-        val inboxMap = Inbox(msgMap.msg,friendId,friendName,friendImg,0)
-        getInbox(currentUid,friendId).setValue(inboxMap).addOnSuccessListener {
-            getInbox(friendId,currentUid).addListenerForSingleValueEvent(object:
+        val inboxMap = Inbox(msgMap.msg, friendId, friendName, friendImg, 0)
+        getInbox(currentUid, friendId).setValue(inboxMap).addOnSuccessListener {
+            getInbox(friendId, currentUid).addListenerForSingleValueEvent(object :
                 ValueEventListener {
 
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val value = snapshot.getValue(Inbox::class.java)
                     inboxMap.apply {
-                        from=currentUid
-                        name=currentUser.name
-                        image=currentUser.downloadUrlDp
-                        count=1
+                        from = currentUid
+                        name = currentUser.name
+                        image = currentUser.downloadUrlDp
+                        count = 1
                     }
 
                     value?.let {
-                        inboxMap.count = value.count+1
+                        inboxMap.count = value.count + 1
                     }
-                    getInbox(friendId,currentUid).setValue(inboxMap)
+                    getInbox(friendId, currentUid).setValue(inboxMap)
                 }
 
                 override fun onCancelled(error: DatabaseError) {}
@@ -190,13 +192,13 @@ class ChatActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateReadCount(){
-        getInbox(currentUid,friendId).addListenerForSingleValueEvent(object:
+    private fun updateReadCount() {
+        getInbox(currentUid, friendId).addListenerForSingleValueEvent(object :
             ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
-                if(snapshot.exists()){
-                    getInbox(currentUid,friendId).child("count").setValue(0)
+                if (snapshot.exists()) {
+                    getInbox(currentUid, friendId).child("count").setValue(0)
                 }
             }
 
@@ -207,17 +209,17 @@ class ChatActivity : AppCompatActivity() {
     private fun getMessages(friend_id: String) =
         db.reference.child("messages/${getId(friend_id)}")
 
-    private fun getInbox(toUser:String,fromUser:String) =
+    private fun getInbox(toUser: String, fromUser: String) =
         db.reference.child("inbox/$toUser/$fromUser")
 
-    private fun getId(friend_id:String):String =
-        if(friend_id>currentUid)
-            currentUid+friend_id
-        else friend_id+currentUid
+    private fun getId(friend_id: String): String =
+        if (friend_id > currentUid)
+            currentUid + friend_id
+        else friend_id + currentUid
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home->
+        when (item.itemId) {
+            android.R.id.home ->
                 onBackPressed()
         }
         return super.onOptionsItemSelected(item)
