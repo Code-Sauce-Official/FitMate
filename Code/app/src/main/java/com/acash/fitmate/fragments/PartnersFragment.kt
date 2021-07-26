@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.acash.fitmate.InboxViewHolder
+import com.acash.fitmate.viewholders.InboxViewHolder
 import com.acash.fitmate.R
 import com.acash.fitmate.activities.ChatActivity
 import com.acash.fitmate.activities.NAME

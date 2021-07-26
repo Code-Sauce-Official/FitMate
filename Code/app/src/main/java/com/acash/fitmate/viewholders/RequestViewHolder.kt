@@ -1,4 +1,4 @@
-package com.acash.fitmate
+package com.acash.fitmate.viewholders
 
 import android.app.Activity
 import android.app.ProgressDialog

@@ -1,8 +1,9 @@
-package com.acash.fitmate
+package com.acash.fitmate.viewholders
 
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import com.acash.fitmate.R
 import com.acash.fitmate.models.Inbox
 import com.acash.fitmate.utils.formatAsListItem
 import com.bumptech.glide.Glide
