@@ -48,6 +48,7 @@ class ChatActivity : AppCompatActivity() {
     private var listChatEvents = mutableListOf<ChatEvent>()
     private lateinit var chatAdapter: ChatAdapter
     private lateinit var currentUser: User
+    private lateinit var updateUnreadCountListener:ValueEventListener
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,7 +98,7 @@ class ChatActivity : AppCompatActivity() {
             }
         }
 
-        updateReadCount()
+        updateUnreadCount()
 
         db.reference.child("user_status/${friendId}")
             .addValueEventListener(object : ValueEventListener {
@@ -192,8 +193,8 @@ class ChatActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateReadCount() {
-        getInbox(currentUid, friendId).addListenerForSingleValueEvent(object :
+    private fun updateUnreadCount() {
+        updateUnreadCountListener = getInbox(currentUid, friendId).addValueEventListener(object :
             ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -223,5 +224,10 @@ class ChatActivity : AppCompatActivity() {
                 onBackPressed()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        getInbox(currentUid,friendId).removeEventListener(updateUnreadCountListener)
     }
 }
