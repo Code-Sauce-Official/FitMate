@@ -27,9 +27,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            app:alignContent="flex_start"
+            app:alignContent="flex_end"
             app:flexWrap="wrap"
-            app:justifyContent="flex_start">
+            app:justifyContent="flex_end">
 
             <TextView
                 android:id="@+id/tvMsg"
