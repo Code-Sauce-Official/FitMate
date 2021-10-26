@@ -22,13 +22,13 @@ Do you feel lazy and uninterested when there’s no one with you to workout? Do 
 ## Features✨
 - `Authentication` : This is implemented using Firebase Auth. A first-time user needs to sign up upon opening the app. On doing the same, the user will receive a verification mail. The link in the mail will verify the user after which they can sign in. If the mail is not sent due to any error, there's an option for the user to request for it again at an interval of 30 seconds. The user upon forgetting the password can use an option to reset their password, through which they will receive a mail, which will direct them to change the same.  
 
-- `Find Partners` : This is the main feature of the application. This feature allows the user to look for workout buddies based on the preferences(community, gender etc.), the user can view their profiles and also make requests which can be accepted or declined. The chat feature allows the partners to communicate with each other.
-
 - `Taking up Challenges` : The user can choose from a variety of timed challenges, updated daily to suit your needs. The challenges can be chosen according to the level of user's expertise and he/she can earn badges on completing them.
 
-- `Join Communities` : The user can explore different communities as per the interests. Sports, athletics, yoga and many more! The user can interact with people and gain tips to keep yourself in shape. The group chat feature allows the people who have joined the same community to interact and plan out activities together in one place.
+- `Find Partners` : This is the main feature of the application. This feature allows the user to look for workout buddies based on the preferences(community, gender etc.), the user can view their profiles and also make requests which can be accepted or declined. The chat feature allows the partners to communicate with each other.
 
 - `Insights` : The user can explore a world of daily insights where he/she can gain knowledge about daily diet and workout needs, and also ways to keep oneself calm throughout the day!
+
+- `Join Communities` : The user can explore different communities as per the interests. Sports, athletics, yoga and many more! The user can interact with people and gain tips to keep yourself in shape. The group chat feature allows the people who have joined the same community to interact and plan out activities together in one place.
 
 
 ## Maintainers✨
