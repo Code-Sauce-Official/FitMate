@@ -2,7 +2,7 @@
 
 # FitMate 
 
-Do you feel lazy and uninterested when there’s no one with you to workout? Do you fail to keep a track of your workouts and need guidance? 
+Feel lazy and uninterested when there’s no one with you to workout? Do you fail to keep a track of your workouts and need guidance? 
 
 ✨Then fitmate is the perfect place for you! Find your ideal workout partner according to your preferences and interact with your partner whenever you want!✨ 
 
